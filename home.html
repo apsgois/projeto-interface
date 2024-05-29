@@ -9,22 +9,18 @@
 
 <body>
   <header id="head">
-    <div id="menu"><span class="material-icons icoG">
-        menu
-      </span></div>
+    <div id="menu" onclick="openDrawer()"><span class="material-icons icoG">menu</span></div>
     <div id="perfil"><span class="material-icons icoG">person</span></div>
   </header>
   <main>
     <div id="mensagens">
       <div id="user_name" class="font">Olá Aluno!</div>
       <div id="mns_box">
-        <div id="icon"><span class="material-icons icoP">
-            notifications_active</span></div>
-        <div id="mns" class="font">A sua proxima aula será no predio 1 - Sala 4 </div>
+        <div id="icon"><span class="material-icons icoP">notifications_active</span></div>
+        <div id="mns" class="font">A sua próxima aula será no prédio 1 - Sala 4</div>
       </div>
       <div id="mns_box">
-        <div id="icon"><span class="material-icons icoP">
-            mail</span></div>
+        <div id="icon"><span class="material-icons icoP">mail</span></div>
         <div id="mns" class="font">Resultado da prova de C204</div>
       </div>
     </div>
@@ -34,51 +30,70 @@
         <div id="calendario_data" class="font">12/10/2021</div>
         <div id="calendario_evento" class="font">Prova de C204</div>
       </div>
-      <div id="calendario_hora">Das 14:00 as 16:00</div>
+      <div id="calendario_hora">Das 14:00 às 16:00</div>
       <div id="calendario_box">
         <div id="calendario_data" class="font">15/10/2021</div>
         <div id="calendario_evento" class="font">Prova de C205</div>
       </div>
       <div id="calendario_hora">Das 10:00 ao 12:00</div>
+    </div>
 
-
-      <!-- Horarios de aulas, como sala, predio e materia, porem precisa ser uma tabela para ser o quadro de horarios -->
-     <!--Tabela -->
-      <table id="horarios">
-        <thead>
-          <tr>
-            <th>Materia</th>
-            <th>Horario de Aula</th>
-            <th>Sala</th>
-            <th>Professor</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Matemática</td>
-            <td>Segunda-feira, 08:00 - 10:00</td>
-            <td>Sala 1</td>
-            <td>Prof. Silva</td>
-          </tr>
-          <tr>
-            <td>Física</td>
-            <td>Terça-feira, 10:00 - 12:00</td>
-            <td>Sala 2</td>
-            <td>Prof. Santos</td>
-          </tr>
-          <tr>
-            <td>Química</td>
-            <td>Quarta-feira, 14:00 - 16:00</td>
-            <td>Sala 3</td>
-            <td>Prof. Souza</td>
-          </tr>
-          <!-- Add more rows for other subjects -->
-        </tbody>
-      </table>
-
-
-
+    <h1>Informações de Sala</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Sala</th>
+          <th>Localização</th>
+          <th>Aula</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sala 101</td>
+          <td>Prédio 1</td>
+          <td>Cálculo 1</td>
+          <td>08:00 - 10:00</td>
+        </tr>
+        <tr>
+          <td>Sala 202</td>
+          <td>Prédio 2</td>
+          <td>Cálculo 2</td>
+          <td>10:00 - 12:00</td>
+        </tr>
+        <tr>
+          <td>Sala 303</td>
+          <td>Prédio 3</td>
+          <td>Física 1</td>
+          <td>13:00 - 15:00</td>
+        </tr>
+        <tr>
+          <td>Sala 404</td>
+          <td>Prédio 4</td>
+          <td>Álgebra Linear</td>
+          <td>15:00 - 17:00</td>
+        </tr>
+      </tbody>
+    </table>
   </main>
+
+  <!-- Drawer menu -->
+  <div id="myDrawer" class="drawer">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeDrawer()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#forum">Forum</a>
+    
+  </div>
+
+  <script>
+    function openDrawer() {
+      document.getElementById("myDrawer").style.width = "250px";
+    }
+
+    function closeDrawer() {
+      document.getElementById("myDrawer").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fórum de Estudantes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Fórum de Estudantes</h1>
+  </header>
+  <main>
+    <section class="forum">
+      <h2>Novo Tópico</h2>
+      <form>
+        <label for="topic-title">Título:</label>
+        <input type="text" id="topic-title" name="topic-title" required>
+        <label for="topic-content">Conteúdo:</label>
+        <textarea id="topic-content" name="topic-content" rows="4" required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+    <section class="topics">
+      <h2>Tópicos Recentes</h2>
+      <ul>
+        <li>
+          <h3>Horários de Aulas</h3>
+          <p>Alguém tem os horários das aulas de Cálculo 1?</p>
+          <small>Postado por: EstudanteX</small>
+        </li>
+        <li>
+          <h3>Informações sobre Professores</h3>
+          <p>Alguém já teve aula com o ProfessorY? Poderia compartilhar sua experiência?</p>
+          <small>Postado por: EstudanteY</small>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Fórum de Estudantes. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
