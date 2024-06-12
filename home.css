@@ -4,15 +4,18 @@
   --cor-text: black; /* Preto */
   --cor-back1: #edf2f4; /* Azul claro */
   --cor-back2: #6a937a; /* Verde Escuro */
+  
+  --md-sys-color-primary: #126ae2;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #edf2f4;
+  --md-sys-color-on-primary-container: #002020;
 }
-
 
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0px;
   background-color: var(--cor-back1);
- 
 }
+
 
 header {
   display: flex;
@@ -144,6 +147,19 @@ tbody tr:nth-child(even) {
   transition: 0.5s;
   z-index: 1;
 }
+#componentes {
+  position: relative;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 
 #menu_bot {
   position: relative;
