@@ -16,7 +16,6 @@ body {
   background-color: var(--cor-back1);
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -48,7 +47,6 @@ header {
   margin-right: 15px;
 }
 
-
 .icoG {
   font-size: 36px;
   margin: 0 10px;
@@ -71,7 +69,7 @@ main {
   margin-bottom: 10px;
 }
 
-#mns_box, #calendario_box {
+.calendario_box {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -81,10 +79,25 @@ main {
   background-color: #f5f5f5;
 }
 
-#mns_box:hover, #calendario_box:hover {
+.calendario_data {
+  margin-right: 20px; /* Adiciona espaço entre a data e o evento */
+}
+
+.calendario_box:hover {
   background-color: #e9e9e9;
 }
 
+.calendario_hora {
+  
+  margin-left: 20px;
+}
+.calendario_evento {
+  color: red;
+}
+.calendario_prova{
+  color: #0056a6;
+  margin-right: 30px;
+}
 #icon {
   margin-right: 10px;
 }
@@ -93,7 +106,7 @@ main {
   font-size: 24px;
 }
 
-#mns, #calendario_evento {
+#calendario_evento {
   font-size: 1em;
 }
 
@@ -135,7 +148,6 @@ tbody tr:nth-child(even) {
   background-color: #fff;
 }
 
-
 #menu_aba {
   height: 100%;
   width: 0;
@@ -147,6 +159,7 @@ tbody tr:nth-child(even) {
   transition: 0.5s;
   z-index: 1;
 }
+
 #componentes {
   position: relative;
   background-color: white;
@@ -159,12 +172,10 @@ tbody tr:nth-child(even) {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
 #menu_bot {
   position: relative;
   padding: 20px;
-  display: "block";
+  display: block;
   cursor: pointer;
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
@@ -172,6 +183,23 @@ tbody tr:nth-child(even) {
   font-style: normal;
   font-size: 14pt;
   color: var(--cor-click);
- 
 }
-
+.frequencia_box {
+ margin-left: 20px;
+ color: red;
+}
+.mns_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+.mns_box:hover {
+  background-color: #e9e9e9;
+}
+#mns_icon {
+  margin-right: 10px;
+}

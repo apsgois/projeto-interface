@@ -103,7 +103,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: block;
   bottom: 0;
   width: 100%;
   
@@ -133,7 +133,7 @@ footer {
 #menu_aba {
   height: 100%;
   width: 0;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: white;
